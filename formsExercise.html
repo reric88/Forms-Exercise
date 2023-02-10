@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Customer Experience Survey">
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width">
+    <title>Customer Experience Survey</title>
+</head>
+
+<body>
+    <form>
+        <fieldset class="fieldset1">
+            <legend>
+                Customer Experience Survey
+            </legend>
+            <label for="storeNumber" name="storeNumber">Store Number</label>
+            <select name="storeNumber" id="storeNumber">
+                <option hidden>Select A Store</option>
+                <option value="3109">3109</option>
+                <option value="2421">2421</option>
+                <option value="5357">5357</option>
+            </select>
+            <br>
+            <fieldset class="fieldset1">
+                <legend>
+                    When you visited:
+                </legend>
+                <label for="dateVisited">Date Visited</label>
+                <input type="date" name="dateVisited" id="dateVisited" value="2022-03-01" min="2022-01-01"
+                    max="2022-12-31">
+                <br>
+                <label for="time">Time</label>
+                <input type="time" name="time" id="time" value="12:30">
+            </fieldset>
+            <br>
+            <label for="fullName">Full Name:</label>
+            <input type="text" name="fullName" id="fullName" placeholder="Name">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <br>
+            <fieldset class="fieldset1">
+                <legend>
+                    How would you rate your level of satisfaction with your visit?
+                </legend>
+                <input type="radio" name="satisfaction" id="satisfied">
+                <label for="satisfied">Satisfied</label>
+                <br>
+                <input type="radio" name="satisfaction" id="neither" checked>
+                <label for="neither">Neither Satisfied Nor Dissatisfied</label>
+                <br>
+                <input type="radio" name="satisfaction" id="dissatisfied">
+                <label for="dissatisfied">Dissatisfied</label>
+            </fieldset>
+            <br>
+            <label for="experience">Tell us about your experience</label>
+            <br>
+            <textarea name="experience" id="experience" cols="17" rows="2"></textarea>
+            <br>
+            <label for="visitAmount">Times visited last month:</label>
+            <br>
+            <input type="number" name="visitAmount" id="visitAmount" min="0" max="30">
+            <br>
+            <input type="checkbox" name="check" id="check" required>
+            <label for="checkbox">Please check the box if you would be willing to be contacted about your
+                experience.</label>
+            <br>
+            <label for="password">Create a Password:</label>
+            <input class="styled" type="password" name="password" id="password"
+                pattern="(?=.*[0-9]) (?=.*[a-z]) (?=.*[A-Z]) .{5,10}"
+                title="Your password must contain at least 1 lower-case and 1 upper-case character, one number and be between 5 and 10 characters in length. Or it can be your credit card number, thats cool too. Don't forget to include the expiration date and the CSC"
+                required>
+            <br>
+            <!-- <input class="subButton" type="submit" name="subButton" id="subButton"> -->
+            <div class="box">
+                <a href="./submitted.html">
+                <input class="subButton" type="image" value="Submit" src="./Images/PXL_20221122_175050224_2.jpg">
+                </a>
+                <div class="leftText">SUBMIT</div>
+                <div class="rightText">TO ME</div>
+            </div>
+            <input type="reset" value="Or Click Here to Reset the Form">
+
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
