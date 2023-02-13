@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Customer Experience Survey">
     <link rel="stylesheet" href="./styles.css">
-    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Eric Collard">
     <title>Customer Experience Survey</title>
 </head>
 
@@ -65,13 +65,13 @@
             <br>
             <input type="number" name="visitAmount" id="visitAmount" min="0" max="30">
             <br>
-            <input type="checkbox" name="check" id="check" required>
+            <input type="checkbox" name="check" id="checkbox" required>
             <label for="checkbox">Please check the box if you would be willing to be contacted about your
                 experience.</label>
             <br>
             <label for="password">Create a Password:</label>
             <input class="styled" type="password" name="password" id="password"
-                pattern="(?=.*[0-9]) (?=.*[a-z]) (?=.*[A-Z]) .{5,10}"
+                pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(.{5,10})"
                 title="Your password must contain at least 1 lower-case and 1 upper-case character, one number and be between 5 and 10 characters in length. Or it can be your credit card number, thats cool too. Don't forget to include the expiration date and the CSC"
                 required>
             <br>
